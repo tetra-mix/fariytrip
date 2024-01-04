@@ -1,8 +1,6 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs } from 'expo-router';
 import { Pressable, useColorScheme } from 'react-native';
-import { TailwindProvider } from 'tailwind-rn';
-import Utilities  from '../../tsconfig.json';
 import Colors from '../../constants/Colors';
 
 /**

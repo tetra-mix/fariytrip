@@ -1,24 +1,46 @@
 import { StyleSheet } from 'react-native';
 import { Text, View } from '../../components/Themed';
-// UIライブラリが使用できない　←原因不明
-// 使いたいのはレイアウトができるライブラリ mui, native-base
-// これを使うと静的レンダリングエラーが発生する。
-// 使えるライブラリは react-native-paper, react-native-elements
+import Area from '../../components/systemUI/Area';
+import { ScrollView } from 'react-native-gesture-handler';
 
-import '../../css/style.css'
 export default function TabOneScreen() {
+
   return (
-    <View style={styles.container}>
-      <p>test componets</p>
-    </View>
+    <ScrollView>
+      <View style={styles.container}>
+        <View style={styles.topContainer}>
+          <Text style={styles.title}>Fairy Trip</Text>
+        </View>
+        <View style={styles.minicontainer}>
+          <Text style={styles.normalText}>
+            旅行をもっと楽しく、まだ知らないものに...
+          </Text>
+          <Text style={styles.normalText}>
+
+          </Text>
+        </View>
+      </View>
+      <View>
+        <View style={styles.topContainer}>
+          <Text style={styles.subtitle}>おすすめの観光地</Text>
+        </View>
+        <Area />
+      </View>
+      <View>
+        <View style={styles.topContainer}>
+          <Text style={styles.subtitle}>おすすめスポット</Text>
+        </View>
+        <Area />
+      </View>
+      
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    color: 'white'
   },
   title: {
     fontSize: 40,
@@ -27,6 +49,21 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 20,
     fontWeight: 'bold',
+    paddingBottom: 5,
+    borderBottomWidth: 2,
+    borderBottomColor: 'white',
+  },
+  minicontainer: {
+    flex: 1,
+    flexDirection: 'row',
+    width: '90%',
+    color: 'white',
+    margin: 20
+  },
+  normalText: {
+    padding: 20,
+    fontSize: 16,
+    fontWeight: '400'
   },
   separator: {
     marginVertical: 30,
@@ -34,8 +71,9 @@ const styles = StyleSheet.create({
     width: '80%',
   },
   topContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
+    alignItems: 'center',
+
   },
   card: {
     flex: 1,
