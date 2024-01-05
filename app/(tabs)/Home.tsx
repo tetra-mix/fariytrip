@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { Text, View } from '../../components/Themed';
 import Area from '../../components/systemUI/Area';
+import Spot from '../../components/systemUI/Spot';
 import { ScrollView } from 'react-native-gesture-handler';
 
 export default function TabOneScreen() {
@@ -16,7 +17,6 @@ export default function TabOneScreen() {
             旅行をもっと楽しく、まだ知らないものに...
           </Text>
           <Text style={styles.normalText}>
-
           </Text>
         </View>
       </View>
@@ -30,7 +30,7 @@ export default function TabOneScreen() {
         <View style={styles.topContainer}>
           <Text style={styles.subtitle}>おすすめスポット</Text>
         </View>
-        <Area />
+        <Spot />
       </View>
       
     </ScrollView>
