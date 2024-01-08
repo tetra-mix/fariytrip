@@ -9,12 +9,13 @@ You cannot use yarn or pnpm.
 * react-native-reanimated
 * expo-cli
 * react-native-ble-plx
-* leaflet
-* react-leaflet
-* leaflet-routing-machine
-* geojson
-* tailwindcss
-* nativewind
+* expo-location
+* expo-permission
+* react-native-maps
+* react-native-paper
+* react-native-leaflet-view <= rm
+* react-native-leaflet-routing <= rm
+* react-native-maps-directions
 
 
 ## tailwindcss react native

@@ -1,11 +1,11 @@
 import { StyleSheet } from 'react-native';
 import { Text, View } from '../../components/Themed';
-import Map from '../../components/pages/Map';
+import Main from '../../components/map/Main';
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <Map />
+      <Main />
     </View>
   );
 }

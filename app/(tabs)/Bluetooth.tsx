@@ -1,11 +1,9 @@
 import { StyleSheet } from 'react-native';
 import { Text, View } from '../../components/Themed';
-import Bluetooth from '../../components/pages/Bluetooth';
-
 export default function TabThreeScreen() {
   return (
     <View style={styles.container}>
-      <Bluetooth/>
+      <Text>Bluetooth</Text>
     </View>
   );
 }

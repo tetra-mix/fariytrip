@@ -1,12 +1,12 @@
 interface GeoSpot {
-    id: number;
+    id: string;
     name: string;
     section: string;
     genre: string;
-    lat: number;
-    lng: number;
-    description: string;
-    description_en: string;
+    lat: string;
+    lng: string;
+    discription: string;
+    discription_en: string;
 }
 
 export default GeoSpot;
